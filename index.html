@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>John's Capstone 21/22</title>
+    <link rel="stylesheet" href="defaultStyle.css">
+    <style>
+      body {text-align:center}
+      
+      .spoiler>div {margin: 5px; overflow: hidden; transition: all 1s ease}
+      .spoilerbutton[value="Find Specific Page"]+.spoiler>div {max-height: 0}
+      .spoilerbutton[value="Hide"]+.spoiler>div {max-height: 90px}
+      
+      .bottom {margin-top:200px}
+    </style>
+  </head>
+  <body>
+    <h1 class=animateIn>
+      What is the best coding language to create simple zero-sum games?
+    </h1>
+    <div class=animateInTwo>
+     <h3>On this website, we will observe the differences between HTML, Python, and C++ when it   comes to creating simple games such as Rock, Paper, Scissors<br><br>Capstone Project of John Wendt</h3><hr>
+      <span class=breakFifty></span>
+      <h4>Website Navigation</h4>
+      <a href=myHistory.html target=_blank>Start Presentation</a><br>
+      
+      <input class="spoilerbutton" type="button" value="Find Specific Page" onclick="this.value=this.value=='Find Specific Page'?'Hide':'Find Specific Page';">
+      <div class="spoiler">
+        <div>
+          <a href=myHistory.html target=_blank>Why this topic?</a><br>
+          <a href=zerosum.html target=_blank>What is a zero-sum game?</a><br>
+          <a href=introduction.html target=_blank>What languages did I use?</a><br>
+          <a href=proCon.html target=_blank>Language Evaluation</a><br>
+          <a href=proConEval.html target=_blank>The Verdict</a><br>
+        </div>
+      </div><br>
+      
+      <a href=downloadProjects.html target=_blank>Explore my Project</a><br>
+      <a href=journal.html target=_blank>My Progress Journal</a><br>
+      
+      <div class=bottom>
+        <p>Yes, this website has easter eggs</p>
+      </div>
+    </div>
+    <!--
+      Easter eggs:
+      +rep in introduction.html (in code)
+      dino game on proCon.html (approx 100px below word "libraries")
+      nyan cat on journal.html (scroll to bottom)
+      pointerpointer on proConEval.html (click on python image)
+    -->
+  </body>
+</html>

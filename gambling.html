@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gambling</title>
+    <script>
+      
+    </script>
+  </head>
+  <body>
+    <center>
+      <h1>gambling</h1><br><br>
+      <p>Guess a number, between <b>one</b> and <b>five</b>. If you get it correct you win.</p>
+      <input type=text placeholder="A number between one and five" id=submitMe>
+      <button onclick=gamble()>Submit</button>
+    </center>
+    <script>
+      function gamble() {
+        var playerInput=document.getElementById('submitMe').value
+        var computerChoice=(Math.ceil(Math.random()*5))
+        if (playerInput==computerChoice) {
+          var result="win"
+        }
+        else {
+          var result="lose"
+        }
+        alert("Player chose: "+playerInput+"\nNumber was: "+computerChoice+"\n"+result)
+      }
+    </script>
+  </body>
+</html>

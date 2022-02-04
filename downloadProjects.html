@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Download my projects</title>
+    <link rel="stylesheet" href="defaultStyle.css">
+    <style>
+      .html {position:absolute; margin-left:5%; width:30%}
+      .py {position:absolute; margin-left:39%; width:30%}
+      .cxx {position:absolute; margin-left:76%; width:30%}
+      
+      .spoiler>div {margin: 5px; overflow: hidden; transition: all 1s ease}
+      .spoilerbutton[value="Show Projects"]+.spoiler>div {max-height: 0}
+      .spoilerbutton[value="Hide"]+.spoiler>div {max-height: 90px}
+      
+      .bottom {
+        position:absolute;
+        margin-top:200px;
+        margin-left:23%;
+      }
+    </style>
+  </head>
+  <body>
+    <center><h2>For Python & C++, you will need to download an IDE and paste the code into that IDE</h2>
+    <p>Chromebook (suggested): <a href=https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?hl=en target=_blank>HTML</a> <a href="https://play.google.com/store/apps/details?id=ru.iiec.pydroid3&hl=en_US&gl=US" target=_blank>Python</a> <a href="https://play.google.com/store/apps/details?id=ru.iiec.cxxdroid&hl=en_US&gl=US" target=_blank>C++</a></p>
+    <p>Mac/Windows/Linux (~20min install & setup): <a href=https://code.visualstudio.com/Download target=_blank>VSCode</a></p>
+    <p>No Download (for interactive bit): <a href=https://scratch.mit.edu/projects/editor/ target=_blanks>Scratch</a></p></center><hr>
+    
+    <div class=html>
+      <img src=https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png width=30%><br>
+     <input class="spoilerbutton" type="button" value="Show Projects" onclick="this.value=this.value=='Show Projects'?'Hide':'Show Projects';">
+      <div class="spoiler">
+        <div>
+          <a href=project/rps.html target=_blank>Rock, Paper, Scissor (HTML)</a><br>
+          <a href=project/gambling.html target=_blank>Gambling (HTML)</a><br>
+        </div>
+      </div>
+    </div>
+    
+    <div class=py>
+      <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png width=30%><br>
+      <input class="spoilerbutton" type="button" value="Show Projects" onclick="this.value=this.value=='Show Projects'?'Hide':'Show Projects';">
+      <div class="spoiler">
+        <div>
+          <a href=project/rps.py target=_blank>Rock, Paper, Scissor (Python)</a><br>
+          <a href=project/ttt.py target=_blank>Tic Tac Toe (Python)</a><br>
+        </div>
+      </div>
+    </div>
+    
+    <div class=cxx>
+      <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/640px-ISO_C%2B%2B_Logo.svg.png width=30%><br>
+      <input class="spoilerbutton" type="button" value="Show Projects" onclick="this.value=this.value=='Show Projects'?'Hide':'Show Projects';">
+      <div class="spoiler">
+        <div>
+          <a href=project/rps.cxx target=_blank>Rock, Paper, Scissor (C++)</a><br>
+          <a href=project/five.cxx target=_blank>Five (C++)</a><br>
+        </div>
+      </div>
+    </div>
+    
+    
+    <center>
+      <p class=bottom>Type "Ctrl+U" to see how I made this page, or any other page on the website!<br>(For non-chromebooks, right-click --> View Page Source)</p>
+    </center>
+  </body>
+</html>
